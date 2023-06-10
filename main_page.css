@@ -1,0 +1,255 @@
+body{
+    background-color: rgb(39, 39, 39);
+}
+
+#image{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    border-radius: 25px;
+    z-index: 1;
+}
+
+#sidebar{
+    position: absolute;
+    text-align: center;
+    border-radius: 5px;
+    background: rgb(255, 255, 255);
+    opacity: 20%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    top: 90px;
+    right: 75%;
+    width: 300px;
+    height: 780px;
+    z-index: 2;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 200px 1fr; /* left side menu width and content width */
+    grid-template-rows: 50px 1fr; /* top search bar height and content height */
+    grid-template-areas: 
+        "header header"
+        "nav content";
+    height: 95vh; /* full viewport height */
+}
+/* CSS for header area */
+.header {
+    grid-area: header;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    font-size: 2em;
+    padding: 10px;
+}
+/* CSS for navigation area */
+.nav {
+    grid-area: nav;
+    background-color: #f2f2f2;
+    padding: 10px;
+    position: relative;
+    text-align: center;
+    background-image: url('loginimage.jpg');
+    background-size: cover;
+    background-position: center;
+}
+/* CSS for content area */
+.content {
+    grid-area: content;
+    background-color: #fff;
+    overflow: auto; /* enable scrolling */
+    padding: 10px;
+}
+/* CSS for search bar */
+.search {
+    width: 100%;
+    height: 40px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    padding: 10px;
+}
+
+
+.button {
+    border: none;
+    color: white;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    width: 97%;
+}
+
+.button1 {
+    background-color: white;
+    color: black;
+    border: 3px solid #000000;
+    border-radius: 5px;
+}
+  
+.button1:hover{
+    background-color: #000000;
+    color: white;
+}
+
+.button2 {
+    background-color: white;
+    color: black;
+    border: 3px solid #000000;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+  
+.button2:hover{
+    background-color: #000000;
+    color: white;
+}
+
+.new_ticket_button {
+    border: none;
+    color: white;
+    padding: 10px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 20px;
+    margin-right: 5%;
+    margin-left: 5%;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    height: 150px;
+    width: 90%;
+}
+
+.button3 {
+    background-color: rgb(65, 61, 61);
+    color: rgb(255, 255, 255);
+    border: 3px solid #000000;
+    border-radius: 5px;
+}
+  
+.button3:hover{
+    background-color: #000000;
+    color: white;
+}
+
+.ticket_preview{
+    border-radius: 5px;
+    background: rgb(65, 61, 61);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 20px;
+    margin-right: 5%;
+    margin-left: 5%;
+    height: 150px;
+}
+
+.ticket_preview > div{
+    color: #fff;
+}
+
+.ticket_header{
+    padding-top: 10px;
+    display:flex;
+    justify-content: flex-end;
+    position: relative;
+}
+
+.ticket_header > div {
+    display: inline-block;
+    padding: 10px;
+}
+
+
+#ticket_name{
+    font-size: 40px;
+    position: absolute;
+    left: 0;
+}
+
+#ticket_status{
+    font-size: 25px;
+}
+
+#ticket_priority{
+    font-size: 25px;
+}
+
+#ticket_id{
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+#ticket_details{
+    padding-top: 20px;
+    font-size: 20px;
+    padding-left: 20px;
+}
+
+.ticket_subject{
+    width: 100%;
+    height: 40px;
+    box-sizing: border-box;
+    border: 2px solid #000000;
+    border-radius: 4px;
+    font-size: 16px;
+    padding: 10px;    
+}
+
+.ticket_description{
+    width: 100%;
+    height: 80%;
+    box-sizing: border-box;
+    border: 2px solid #000000;
+    border-radius: 4px;
+    font-size: 16px;
+    padding: 10px;    
+}
+
+textarea{
+    resize: none;
+    width: 100%;
+    height: 80%;
+    box-sizing: border-box;
+    border: 2px solid #000000;
+    border-radius: 4px;
+    font-size: 16px;
+    padding: 10px; 
+    margin-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.create_ticket_button {
+    border: none;
+    color: white;
+    padding: 10px 32px;
+    text-align: center;
+    font-size: 50px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    height: 10%;
+    width: 100%;
+}
+
+.button4 {
+    background-color: rgb(65, 61, 61);
+    color: rgb(255, 255, 255);
+    border: 3px solid #000000;
+    border-radius: 5px;
+}
+  
+.button4:hover{
+    background-color: #000000;
+    color: white;
+}

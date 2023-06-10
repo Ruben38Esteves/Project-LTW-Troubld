@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <link rel="stylesheet" href="../main_page.css">
+    <link rel="stylesheet" href="../new_ticket.css">
+    <title>Troubld</title>
+</head>
+<body>
+    <div class="wrapper">
+		<div class="header">
+            New Ticket
+		</div>
+		<div class="nav">
+            <div id="profile_photo">
+                <img style="width: 150px; height: 150px;border-radius: 50%; border-color: black;border-width: 5px;"  src="../profile.jpeg" alt="User" onclick="location.href='../profile.html'">
+            </div>
+			<button type="button" class="button button1" onclick="location.href='../main_page.html'">
+                My Tickets
+            </button>
+            <button type="button" class="button button1" onclick="location.href='../login.html'">
+                Management
+            </button>
+            <button type="button" class="button button1" onclick="location.href='../login.html'">
+                Login
+            </button>
+            <button type="button" class="button button2" onclick="location.href='index.html'">
+                Logout
+            </button>
+		</div>
+		<div class="content">
+
+            <div class="header_form"> 
+                <input type="text" class="ticket_subject" placeholder="Subject...">
+                
+                
+                    <div>
+                    
+                        <label for="new_department">Department:</label>
+
+                        <select aria-label="new_department">
+                            <option value="Accounting" selected>Accounting</option>
+                            <option value="Engineering">Engineering</option>
+                        </select>   
+
+                    </div>
+                    <div>
+                    
+                        <label for="new_priority">Priority:</label>
+                        <select aria-label="new_priority">
+                            <optgroup label="Low">
+                                <option value="1" selected>1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </optgroup>
+                            
+                            <optgroup label="Medium">
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                            </optgroup>
+                            
+                            <optgroup label="High">
+                                <option value="1">7</option>
+                                <option value="2">8</option>
+                                <option value="3">9</option>
+                            </optgroup>
+                            
+                        </select>
+                    </div>  
+                
+            </div>
+            <textarea id="email-message" name="email-message" rows="5" placeholder="Description..."></textarea>
+            <button type="button" class="create_ticket_button button3" onclick="location.href='../main_page.html'">+</button>
+		</div>
+	</div>
+</body>

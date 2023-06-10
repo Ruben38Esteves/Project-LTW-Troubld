@@ -1,0 +1,64 @@
+.ticket_chat {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .message_header {
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .message_header p {
+    margin: 0;
+  }
+  
+  .time_sent {
+    color: #888;
+    font-size: 12px;
+  }
+  
+  /* Styling for different users */
+  .message_user > *{
+    background-color: lightblue;
+  }
+  
+  .message_other > *{
+    background-color: lightgreen;
+  }
+  
+
+  .button_send_text {
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  
+  .button_send_text1 {
+    background-color: #4CAF50;
+  }
+  
+  .button_send_text1:hover {
+    background-color: #45a049;
+  }
+
+  .message_form {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .message_form input[type="text"] {
+    flex-grow: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }

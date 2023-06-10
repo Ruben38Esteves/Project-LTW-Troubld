@@ -1,0 +1,124 @@
+body{
+    background-color: rgb(39, 39, 39);
+}
+
+header h1{
+    position: absolute;
+    text-align: center;
+    border-radius: 5px;
+    background: rgb(255, 255, 255);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    top: 70px;
+    right: 50%;
+    width: 600px;
+    height: 780px;
+    z-index: 2;
+}
+
+header b{
+    z-index: 2;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 40px;
+}
+
+#subtitle{
+    z-index: 2;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 40px;
+}
+
+header a{
+    text-decoration: none;
+    font-family: "Times New Roman", Times, serif;
+    text-decoration: underline;
+    font-size: 80px;
+    color: rgb(0, 0, 0);
+}
+
+#image{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    border-radius: 25px;
+    z-index: 1;
+}
+
+#signup{
+    position: absolute;
+    text-align: center;
+    z-index: 10;
+    right: 50%;
+    width: 600px;
+    height: 780px;
+    top: 700px;
+}
+
+
+#signup a{
+    text-decoration: none;
+    font-family: "Times New Roman", Times, serif;
+    text-decoration: underline;
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+    margin-bottom: 100px;
+}
+
+form{
+    position: absolute;
+    text-align: center;
+    z-index: 10;
+    right: 50%;
+    width: 600px;
+    height: 780px;
+    top: 400px;
+}
+
+form > label > * {
+    width: 60%;
+    padding: 12px 20px;
+    margin: 3px;
+    box-sizing: border-box;
+}
+
+#back{
+    position: absolute;
+    text-align: center;
+    z-index: 10;
+    right: 50%;
+    width: 600px;
+    height: 780px;
+    top: 700px;
+}
+
+#back a{
+    z-index: 2;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 40px;
+}
+
+.button {
+    border: none;
+    color: white;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button1 {
+    background-color: white;
+    color: black;
+    border: 3px solid #000000;
+    border-radius: 5px;
+}
+  
+.button1:hover{
+    background-color: #000000;
+    color: white;
+}
+

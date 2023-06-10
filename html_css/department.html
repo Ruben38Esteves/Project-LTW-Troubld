@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <link rel="stylesheet" href="../main_page.css">
+    <link rel="stylesheet" href="../ticket_page.css">
+    <link rel="stylesheet" href="../department.css">
+    <title>Troubld</title>
+</head>
+
+<body>
+    <div class="wrapper">
+		<div class="header">
+			TroubID
+		</div>
+		<div class="nav">
+            <div id="profile_photo">
+                <img style="width: 150px; height: 150px;border-radius: 50%; border-color: black;border-width: 5px;"  src="../profile.jpeg" alt="User" onclick="location.href='../profile.html'">
+            </div>
+			<button type="button" class="button button1" onclick="location.href='../main_page.html'">
+                My Tickets
+            </button>
+            <button type="button" class="button button1" onclick="location.href='../login.html'">
+                Management
+            </button>
+            <button type="button" class="button button1" onclick="location.href='../login.html'">
+                Login
+            </button>
+            <button type="button" class="button button2" onclick="location.href='index.html'">
+                Logout
+            </button>
+		</div>
+		<div class="content">
+            <div class="department_preview">
+
+                <div id="department_name">
+                    <h1 title="Department Name">Accounting</h1>
+                </div>
+                
+                <div id="department_description">
+                    <h2> Lorem ipsum dolor sit amet, consectetur adipiscing elit. In condimentum lacus quis convallis molestie. Fusce iaculis urna sed augue consectetur fermentum. Donec molestie et eros ut ornare. Vivamus ut iaculis tellus, id pretium ante. Etiam augue nulla, congue vitae tellus et, consectetur commodo lectus. Praesent ac diam a quam ornare feugiat sit amet id erat. Cras vitae nunc tempus, tincidunt eros id, rhoncus nunc. Nullam dapibus vel nibh nec facilisis. Pellentesque mattis felis id molestie dignissim. Integer tortor augue, ultrices a pulvinar ut, sodales luctus nunc. Donec at massa ac risus dignissim vehicula sed eu odio. Ut neque sem, congue vitae nisl quis, faucibus elementum tellus. Aenean porta purus sed accumsan luctus.
+                    </h2>
+                </div>
+                <div class="department_buttons">
+                    <button type="button" class="button button1" onclick="openModal('Assign new Agent')">
+                        Assign new Agent
+                    </button>
+                    <button type="button" class="button button1" onclick="openModal('Change Status')">
+                        Create Ticket
+                    </button>
+    
+                </div>
+            </div>
+            <div class="department_tickets">  
+                <div class="received_tickets">
+                    <p title="Received Tickets">Received Tickets</p>
+                    // call loop for recieved tickets
+                
+                <div class="assigned_tickets">
+                <p title="Assigned Tickets">Assigned Tickets</p>
+                </div>
+
+                <div class="last_finished_tickets">
+                    <p title="Last Finished Tickets">Last Finished Tickets</p>
+                    
+                </div>
+    
+                <div class="ticket_preview">
+                    <div class="ticket_part">
+                    <div class="ticket_header">
+                        <div id="ticket_name">
+                            The LCOM project isnt complete
+                        </div>
+                        
+                        <div id="ticket_priority">
+                            <i>Priority:</i> High
+                        </div>
+                    </div> 
+                    <div class="ticket_info">
+                        <div id="ticket_id">
+                           <a href="../ticket_page.html">#0000000000000000000000</a>
+                        </div>    
+                    
+                        <div id="ticket_department">
+                            <i>Department:</i> <a href="../department.html">Accounting</a>
+                        </div>
+                    </div>
+                    <div id="ticket_details">
+                        The lcom project isnt complete and we must hurry to complete it in the shortest time possible
+                    </div>
+                    </div>
+                    <div id="users_associateds">
+                        <div id="user_ticket_creator">
+                           <i>Created By:</i>
+                          <a href="../profile.html">user_81234122</a>
+                        </div>
+                        <div id="user_assigned_to">
+                            <i>Assigned To:</i>
+                            <a href="../profile.html">user_12097512</a>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+
+
+
+
+		</div>
+	</div>
+</body>

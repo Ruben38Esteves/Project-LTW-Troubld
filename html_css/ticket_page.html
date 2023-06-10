@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <link rel="stylesheet" href="../main_page.css">
+    <link rel="stylesheet" href="../ticket_page.css">
+    <title>Troubld</title>
+</head>
+<body>
+    <div class="wrapper">
+		<div class="header">
+			Troubld
+		</div>
+		<div class="nav">
+            <div id="profile_photo">
+                <img style="width: 150px; height: 150px;border-radius: 50%; border-color: black;border-width: 5px;"  src="../profile.jpeg" alt="User" onclick="location.href='../profile.html'">
+            </div>
+			<button type="button" class="button button1" onclick="location.href='../main_page.html'">
+                My Tickets
+            </button>
+            <button type="button" class="button button1" onclick="location.href='../login.html'">
+                Management
+            </button>
+            <button type="button" class="button button1" onclick="location.href='../login.html'">
+                Login
+            </button>
+            <button type="button" class="button button2" onclick="location.href='index.html'">
+                Logout
+            </button>
+		</div>
+		<div class="content">
+            
+            <div class="ticket_preview">
+                <div class="ticket_part">
+                <div class="ticket_header">
+                    <div id="ticket_name">
+                        The LCOM project isnt complete
+                    </div>
+                    <div id="ticket_status">
+                        <i>Status:</i> incomplete
+                    </div>
+                    <div id="ticket_priority">
+                        <i>Priority:</i> High
+                    </div>
+                </div> 
+                <div class="ticket_info">
+                    <div id="ticket_id">
+                        #0000000000000000000000
+                    </div>    
+                
+                    <div id="ticket_department">
+                        <i>Department:</i> <a href="../department.html">Accounting</a>
+                    </div>
+                </div>
+                <div id="ticket_details">
+                    The lcom project isnt complete and we must hurry to complete it in the shortest time possible
+                </div>
+                </div>
+                <div id="users_associateds">
+                    <div id="user_ticket_creator">
+                       <i>Created By:</i>
+                      <a href="../profile.html">user_81234122</a>
+                    </div>
+                    <div id="user_assigned_to">
+                        <i>Assigned To:</i>
+                        <a href="../profile.html">user_12097512</a>
+                    </div>
+                </div>
+            </div>
+                
+            <div class="edit_ticket_buttons">
+                <button type="button" class="button button1" onclick="openModal('Assign new Agent')">
+                    Assign new Agent
+                </button>
+                <button type="button" class="button button1" onclick="openModal('Change Department')">
+                    Change Department
+                </button>
+                <button type="button" class="button button1" onclick="openModal('Change Status')">
+                    Change Status
+                </button>
+                <button type="button" class="button button1" onclick="openModal('Edit hashtags')">
+                    Edit hashtags
+                </button>
+                <button type="button" class="button button1" onclick="openModal('List ticket history')">
+                    List ticket history
+                </button>
+                <button type="button" class="button button1" onclick="openModal('Delete ticket')">
+                    Delete ticket
+                </button>
+
+            </div>
+        </div>
+	</div>
+</body>

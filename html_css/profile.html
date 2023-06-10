@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <link rel="stylesheet" href="main_page.css">
+    <link rel="stylesheet" href="ticket_page.css">
+    <link rel="stylesheet" href="profile.css">
+    <title>Troubld</title>
+</head>
+
+<body>
+    <div class="wrapper">
+		<div class="header">
+			TroubID
+		</div>
+		<div class="nav">
+            <div id="profile_photo">
+                <img style="width: 150px; height: 150px;border-radius: 50%; border-color: black;border-width: 5px;"  src="../profile.jpeg" alt="User" onclick="location.href='../profile.html'">
+            </div>
+			<button type="button" class="button button1" onclick="location.href='../main_page.html'">
+                My Tickets
+            </button>
+            <button type="button" class="button button1" onclick="location.href='../login.html'">
+                Management
+            </button>
+            <button type="button" class="button button1" onclick="location.href='../login.html'">
+                Login
+            </button>
+            <button type="button" class="button button2" onclick="location.href='index.html'">
+                Logout
+            </button>
+		</div>
+		<div class="content">
+            <div class="profile_preview">
+                <div class="profile_header">
+                    <div class="profile_name">
+                        <form class="name_form" action="change_type.php" method="get">
+                                <textarea name="description" rows="1" cols="32">Eduardo Carvalho da Silva Neves</textarea>
+                                <button formaction="change_type.php" formmethod="post" type="submit">
+                                    Edit
+                                </button>
+                        </form>
+                    </div>
+                    <div class="profile_type">
+                        <form action="change_type.php" method="get">
+                                <input type="radio" name="user_type" value="client" checked="checked">Client
+                                <input type="radio" name="user_type" value="agent">Agent
+                                <input type="radio" name="user_type" value="admin"> Admin
+                          </form>
+                    </div>
+                    <div class="profile_email">
+                        <div class="email">
+                            ohngojbngq@gmail.com
+                        </div>
+                        <button class="email_buttom">
+                            change
+                        </button>
+                    </div>
+                </div>
+                <div class="profile_department">
+                    Assigned to the departments:
+                    <ul>
+                        <li>
+                            <a href="../department.html">
+                                Depart1
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="../department.html">
+                                Depart2
+                            </a>
+                        </li>
+                        <li> 
+                            <a href="../department.html">
+                                Depart3
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                        <button class="password_button">
+                            Change password button
+                        </button>
+                
+                </div>
+            <div class="user_tickets">  
+
+            <div class="assigned_tickets">
+                <div class="owned_tickets_head">
+                        <p title="Owned Tickets">Owned Tickets</p>
+                    <div>
+
+                        <select id="tickets_status_selector" name="status_ticket">
+                            <option value="">--Status--</option>
+                            <option value="Working">Open</option>
+                            <option value="Done">Closed</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="ticket_preview">
+                        <div class="ticket_part">
+                        <div class="ticket_header">
+                            <div id="ticket_name">
+                                The LCOM project isnt complete
+                            </div>
+                            <div id="ticket_status">
+                                <i>Status:</i> incomplete
+                            </div>
+                            <div id="ticket_priority">
+                                <i>Priority:</i> High
+                            </div>
+                        </div> 
+                        <div class="ticket_info">
+                            <div id="ticket_id">
+                                 <a href="../ticket_page.html"> #0000000000000000000000</a>
+                            </div>    
+                        
+                            <div id="ticket_department">
+                                <i>Department:</i> <a href="../department.html">Accounting</a>
+                            </div>
+                        </div>
+                        <div id="ticket_details">
+                            The lcom project isnt complete and we must hurry to complete it in the shortest time possible
+                        </div>
+                        </div>
+                        <div id="users_associateds">
+                            
+                            <div id="user_ticket_creator">
+                               <i>Created By:</i>
+                              <a href="../profile.html">user_81234122</a>
+                            </div>
+                            <div id="user_assigned_to">
+                                <i>Assigned To:</i>
+                                <a href="../profile.html">user_12097512</a>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+
+                <div class="assigned_tickets">
+                    <div class="assigned_tickets_head">
+                        <p title="Assigned Tickets">Assigned Tickets</p>
+                    <div>
+
+                        <select id="tickets_status_selector" name="status_ticket">
+                            <option value="">--Status--</option>
+                            <option value="Working">Open</option>
+                            <option value="Done">Closed</option>
+                        </select>
+                    </div>
+                    </div>
+                <div class="ticket_preview">
+                <div class="ticket_part">
+                <div class="ticket_header">
+                    <div id="ticket_name">
+                        The LCOM project isnt complete
+                    </div>
+                    <div id="ticket_status">
+                        <i>Status:</i> incomplete
+                    </div>
+                    <div id="ticket_priority">
+                        <i>Priority:</i> High
+                    </div>
+                </div> 
+                <div class="ticket_info">
+                    <div id="ticket_id">
+                         <a href="../ticket_page.html"> #0000000000000000000000</a>
+                    </div>    
+                
+                    <div id="ticket_department">
+                        <i>Department:</i> <a href="../department.html">Accounting</a>
+                    </div>
+                </div>
+                <div id="ticket_details">
+                    The lcom project isnt complete and we must hurry to complete it in the shortest time possible
+                </div>
+                </div>
+                <div id="users_associateds">
+                    <div id="user_ticket_creator">
+                       <i>Created By:</i>
+                      <a href="../profile.html">user_81234122</a>
+                    </div>
+                    <div id="user_assigned_to">
+                        <i>Assigned To:</i>
+                        <a href="../profile.html">user_12097512</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ticket_preview">
+                <div class="ticket_part">
+                <div class="ticket_header">
+                    <div id="ticket_name">
+                        The LCOM project isnt complete
+                    </div>
+                    <div id="ticket_status">
+                        <i>Status:</i> incomplete
+                    </div>
+                    <div id="ticket_priority">
+                        <i>Priority:</i> High
+                    </div>
+                </div> 
+                <div class="ticket_info">
+                    <div id="ticket_id">
+                         <a href="../ticket_page.html"> #0000000000000000000000</a>
+                    </div>    
+                
+                    <div id="ticket_department">
+                        <i>Department:</i> <a href="../department.html">Accounting</a>
+                    </div>
+                </div>
+                <div id="ticket_details">
+                    The lcom project isnt complete and we must hurry to complete it in the shortest time possible
+                </div>
+                </div>
+                <div id="users_associateds">
+                    <div id="user_ticket_creator">
+                       <i>Created By:</i>
+                      <a href="../profile.html">user_81234122</a>
+                    </div>
+                    <div id="user_assigned_to">
+                        <i>Assigned To:</i>
+                        <a href="../profile.html">user_12097512</a>
+                    </div>
+                </div>
+            </div>
+            <div class="ticket_preview">
+                <div class="ticket_part">
+                <div class="ticket_header">
+                    <div id="ticket_name">
+                        The LCOM project isnt complete
+                    </div>
+                    <div id="ticket_status">
+                        <i>Status:</i> incomplete
+                    </div>
+                    <div id="ticket_priority">
+                        <i>Priority:</i> High
+                    </div>
+                </div> 
+                <div class="ticket_info">
+                    <div id="ticket_id">
+                         <a href="../ticket_page.html"> #0000000000000000000000</a>
+                    </div>    
+                
+                    <div id="ticket_department">
+                        <i>Department:</i> <a href="../department.html">Accounting</a>
+                    </div>
+                </div>
+                <div id="ticket_details">
+                    The lcom project isnt complete and we must hurry to complete it in the shortest time possible
+                </div>
+                </div>
+                <div id="users_associateds">
+                    <div id="user_ticket_creator">
+                       <i>Created By:</i>
+                      <a href="../profile.html">user_81234122</a>
+                    </div>
+                    <div id="user_assigned_to">
+                        <i>Assigned To:</i>
+                        <a href="../profile.html">user_12097512</a>
+                    </div>
+                </div>
+            </div>
+            <div class="ticket_preview">
+                <div class="ticket_part">
+                <div class="ticket_header">
+                    <div id="ticket_name">
+                        The LCOM project isnt complete
+                    </div>
+                    <div id="ticket_status">
+                        <i>Status:</i> incomplete
+                    </div>
+                    <div id="ticket_priority">
+                        <i>Priority:</i> High
+                    </div>
+                </div> 
+                <div class="ticket_info">
+                    <div id="ticket_id">
+                         <a href="../ticket_page.html"> #0000000000000000000000</a>
+                    </div>    
+                
+                    <div id="ticket_department">
+                        <i>Department:</i> <a href="../department.html">Accounting</a>
+                    </div>
+                </div>
+                <div id="ticket_details">
+                    The lcom project isnt complete and we must hurry to complete it in the shortest time possible
+                </div>
+                </div>
+                <div id="users_associateds">
+                    <div id="user_ticket_creator">
+                       <i>Created By:</i>
+                      <a href="../profile.html">user_81234122</a>
+                    </div>
+                    <div id="user_assigned_to">
+                        <i>Assigned To:</i>
+                        <a href="../profile.html">user_12097512</a>
+                    </div>
+                </div>
+            </div>
+                </div>
+            </div>
+
+
+
+
+
+		</div>
+	</div>
+</body>
